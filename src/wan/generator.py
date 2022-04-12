@@ -3,7 +3,7 @@ import random
 
 def get_data():
     words = {}
-    with open('../../data/wan_pairs.csv', newline='') as csvfile:
+    with open('../../data/raw/wan_pairs.csv', newline='') as csvfile:
         spamreader = csv.reader(csvfile)
         for row in spamreader:
             if row[0] not in words:
