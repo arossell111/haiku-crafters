@@ -1,9 +1,9 @@
 import os
 import csv
 
-folder_name = "Cue-Target-Pair"
+folder_name = "../../data/preproc/Cue-Target-Pair"
 
-with open("All-Pairs.csv", "w", newline ='') as write_folder:
+with open("../../data/raw/wan_pairs.csv", "w", newline ='') as write_folder:
     writer = csv.writer(write_folder)
     for filename in os.listdir(folder_name):
         with open(os.path.join(folder_name, filename), 'r') as read_folder:
